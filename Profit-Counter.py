@@ -1,5 +1,6 @@
+
 def profitCounter():
-    howMuchWillYouSelling = float(input('How Much Will You Selling: '))
+    howMuchWillYouSelling = float(input('How Much Will You Sell: '))
     priceWhenBought = float(input('Price When Bought: '))
     priceWhenSold = float(input('Price When Sold: '))
 
@@ -9,4 +10,7 @@ def profitCounter():
 
     return f'Profit: {str(percentProfit)[:5]}%  =  {str(dollarProfit)[:4]}$'
 
-print(profitCounter())
+status = 1
+while status == 1:
+    print(profitCounter())
+    status = int(input('Write "1" to start again. otherwise press any key...  '))
